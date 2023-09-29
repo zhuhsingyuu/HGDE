@@ -158,7 +158,6 @@ if __name__ == '__main__':
         query_data = torch.Tensor(query_data)
         query_label = torch.LongTensor(query_label)
 
-
         # ---- distribution calibration and feature sampling
         sampled_data = []
         sampled_label = []
@@ -236,7 +235,6 @@ if __name__ == '__main__':
         for epoch in (range(1000)):
             z_batch = torch.cat((sampled_data,  support_data), dim=0)
             y_batch = torch.cat((sampled_label, support_label), dim=0)
-
 
             scores = model(z_batch)
             loss = loss_function(scores, y_batch)
