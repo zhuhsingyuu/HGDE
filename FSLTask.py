@@ -46,6 +46,10 @@ _datasetFeaturesFiles = {"miniImagenet": "./miniImagenet/novel_features.plk",
 _cacheDir = r'.\cache'
 _maxRuns = 10000
 # _maxRuns = 1
+=======
+_cacheDir = r"E:\Project\Few_Shot_Distribution_Calibration-master\cache"
+# _maxRuns = 10000
+_maxRuns = 1
 _min_examples = -1
 
 # ========================================================
